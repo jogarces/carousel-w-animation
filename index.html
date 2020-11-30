@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Carousel Demo with Slide In Animation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Carousel with animation" />
+  <meta name="author" content="Josephine Garces" />
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/animate.min.css">
+  <script src="js/custom.js"></script>
+  <link rel="stylesheet" href="css/style.css?v=1.0" />
+</head>
+
+<body>
+  <!--Tablet and above-->
+  <div class="container hidden-xs">
+    <div class="row">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="container slide-ctr">
+              <div class="row slider-ctr-inner-top">
+                <div class="col-sm-4 box" data-animation="animate__animated animate__slideInRight">
+                  <div class="top-left-box inner-box">
+                    <h2>Test 1</h2>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-sm-offset-2 box" data-animation="animate__animated animate__slideInRight">
+                  <div class="top-right-box inner-box">
+                    <h2>Test 2</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-offset-2 col-sm-4 box" data-animation="animate__animated animate__slideInRight">
+                  <div class="bottom-left-box inner-box">
+                    <h2>Test 3</h2>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-sm-offset-2 box" data-animation="animate__animated animate__slideInRight">
+                  <div class="bottom-right-box inner-box">
+                    <h2>Test 4</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="container slide-ctr">
+              <div class="row slider-ctr-inner-top">
+                <div class="col-sm-4 box" data-animation="animate__animated animate__slideInRight">
+                  <div class="top-left-box inner-box">
+                    <h2>Test 5</h2>
+                  </div>
+
+                </div>
+                <div class="col-sm-4 col-sm-offset-2 box" data-animation="animate__animated animate__slideInRight">
+                  <div class="top-right-box inner-box">
+                    <h2>Test 6</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-offset-2 col-sm-4 box" data-animation="animate__animated animate__slideInRight">
+                  <div class="bottom-left-box inner-box">
+                    <h2>Test 7</h2>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-sm-offset-2 box" data-animation="animate__animated animate__slideInRight">
+                  <div class="bottom-right-box inner-box">
+                    <h2>Test 8</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Mobile Only-->
+  <div class="container visible-xs-block">
+    <div class="row">
+      <div id="carousel-mobile-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-mobile-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-mobile-example-generic" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            TEST
+          </div>
+          <div class="item">
+            TEST 2
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-mobile-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-mobile-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
